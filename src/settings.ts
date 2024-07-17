@@ -54,10 +54,17 @@ export class CircleSettings extends FormattingSettingsCard{
         visible: true
     });
 
+    public circleTextSize = new formattingSettings.NumUpDown({
+        name: "circleTextSize",
+        displayName: "Text Size",
+        value: 40,
+        visible: true
+    });
+
     public name: string = "circle";
     public displayName: string = "Circle";
     public visible: boolean = true;
-    public slices: FormattingSettingsSlice[] = [this.circleColor, this.circleThickness, this.circleStroke]
+    public slices: FormattingSettingsSlice[] = [this.circleColor, this.circleThickness, this.circleStroke, this.circleTextSize]
 }
 
 export class VisualSettings extends FormattingSettingsModel {

@@ -81,8 +81,8 @@ export class Visual implements IVisual {
             .attr("r", radius)
             .attr("cx", width / 2)
             .attr("cy", height / 2);
-        let fontSizeValue: number = Math.min(width, height) / 5;
-        this.textValue
+        let fontSizeValue: number = this.visualSettings.circle.circleTextSize.value;
+            this.textValue
             .text(<string>dataView.single.value)
             .attr("x", "50%")
             .attr("y", "50%")
