@@ -1,0 +1,12 @@
+# Node
+node_modules/
+
+# MacOS
+.DS_Store
+
+# Dist folder
+dist/
+
+# Visual Studio Code
+.vscode/
+.tmp/
